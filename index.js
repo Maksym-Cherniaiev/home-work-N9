@@ -21,7 +21,7 @@ class Render{
 			timerWrapper.innerHTML = 
 			`
 				<div class="timer-container__${elem.color}-timer">
-					<span class="${elem.color}-timer time"></span>
+				  <span class="${elem.color}-timer time"></span>
 				</div>
 				<button class="timer-container-button ${elem.color}-button">stop</button>
 				<div class="timer-container__line ${elem.color}-time-line"></div>
