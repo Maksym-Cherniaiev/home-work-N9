@@ -1,0 +1,51 @@
+body {
+    background: rgb(26, 26, 26);
+}
+
+.main-container {
+    height: 100%;
+    width: 1000px;
+    margin: auto;
+    background: rgb(49, 49, 49);
+    padding: 30px;
+}
+
+.time-wrapper {
+    margin: 20px;
+}
+
+.time {
+    font-family: 'Heebo', sans-serif;
+    font-size: 33px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    color: white;
+}
+
+.timer-container-button {
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 20px;
+    margin: 13px 0 13px 0;
+}
+
+.timer-container__line{
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 0 0 33px 0;
+}
+
+.blue-time-line {
+    background: rgb(196, 218, 255);
+}
+
+.green-time-line {
+    background: rgb(191, 255, 227);
+}
+
+.gray-time-line {
+    background: rgb(188, 188, 188);
+}
