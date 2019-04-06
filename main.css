@@ -49,3 +49,11 @@ body {
 .gray-time-line {
     background: rgb(188, 188, 188);
 }
+
+.orange-time-line {
+    background: rgb(255, 183, 106);
+}
+
+.red-time-line {
+    background: rgb(255, 77, 31);
+}

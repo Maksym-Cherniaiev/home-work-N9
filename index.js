@@ -1,7 +1,7 @@
 class Render{
 	constructor() {
 		this.container = document.querySelector(".main-container");
-		this.elemClass = ["blue", "green", "gray"];
+		this.elemClass = ["blue", "green", "gray", "orange", "red"];
 	}
 
 	createsTimer() {
@@ -93,6 +93,7 @@ class TimeSetup extends Render {
 			this.changeButtonText();
 			this.timerSetup(this.minutes, this.seconds);
 		} else {
+			this.timerSetup(this.minutes, this.seconds);
 			this.startTimer();
 		}
 	}
@@ -130,8 +131,14 @@ class TimeSetup extends Render {
 const startBlueTimer = new TimeSetup(0, 10, "blue", 500);
 startBlueTimer.timerCondition();
 
-const startGreenTimer = new TimeSetup(1, 10, "green", 200, false, false);
+const startGreenTimer = new TimeSetup(1, 20, "green", 200, false, false);
 startGreenTimer.timerCondition();
 
-const startGrayTimer = new TimeSetup(2, 50, "gray", 2000, true);
+const startGrayTimer = new TimeSetup(1, 40, "gray", 2000, true);
 startGrayTimer.timerCondition();
+
+const startOrangeTimer = new TimeSetup(4, 0, "orange", 4000, true, true);
+startOrangeTimer.timerCondition();
+
+const startRedTimer = new TimeSetup(4, 0, "red", 1000, false, true);
+startRedTimer.timerCondition();
