@@ -1,30 +1,20 @@
 class Render{
 	constructor() {
 		this.container = document.querySelector(".main-container");
-		this.elemClass = [
-			{
-				color: "blue"
-			},
-			{
-				color: "green"
-			},
-			{
-				color: "gray"
-			}
-		];
+		this.elemClass = ["blue", "green", "gray"];
 	}
 
 	createsTimer() {
-		this.elemClass.forEach(elem => {
+		this.elemClass.forEach(color => {
 			const timerWrapper = document.createElement("div");
-			timerWrapper.classList.add(`${elem.color}-time-wrapper`);
+			timerWrapper.classList.add(`${color}-time-wrapper`);
 			timerWrapper.innerHTML = 
 			`
-				<div class="timer-container__${elem.color}-timer">
-				  <span class="${elem.color}-timer time"></span>
+				<div class="timer-container__${color}-timer">
+				  <span class="${color}-timer time"></span>
 				</div>
-				<button class="timer-container-button ${elem.color}-button">stop</button>
-				<div class="timer-container__line ${elem.color}-time-line"></div>
+				<button class="timer-container-button ${color}-button">stop</button>
+				<div class="timer-container__line ${color}-time-line"></div>
 			`;
 			this.container.append(timerWrapper);
 		});
